@@ -12,6 +12,13 @@ public class Movie {
     private int[]  actorIDS;
 
     public Movie() {}
+    public Movie( String title, String description, int categoryId,int[] ids) {
+        this.title = title;
+        this.description = description;
+        this.categoryId = categoryId;
+        this.actorIDS = ids;
+    }
+
     public Movie(int id, String title, String description, int categoryId,int[] ids) {
         this.id = id;
         this.title = title;

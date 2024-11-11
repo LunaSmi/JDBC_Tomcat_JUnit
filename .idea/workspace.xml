@@ -10,12 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e4304af-ca71-435c-935c-c97645193e3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/ActorDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dao/ActorDaoIT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dao/MovieDaoIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlets/ActorServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlets/CategoryServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlets/MovieServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/jdbc_tomcat_junit/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movies.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/movies.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +31,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="CSS File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -63,6 +70,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -89,9 +99,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Tomcat Server.Tomcat 11.0.0.executor": "Run",
-    "git-widget-placeholder": "feature/dal",
+    "Tomcat Server.index.jsp.executor": "Debug",
+    "git-widget-placeholder": "feature/servlets",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Lena",
+    "last_opened_file_path": "C:/Users/Lena/Documents/GitHub/JDBC_Tomcat_JUnit/src/main/webapp/WEB-INF/jsp",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -106,7 +118,14 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.dao in JDBC_Tomcat_JUnit">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lena\Documents\GitHub\JDBC_Tomcat_JUnit\src\main\webapp" />
+      <recent name="C:\Users\Lena\Documents\GitHub\JDBC_Tomcat_JUnit\src\main\webapp\WEB-INF\css" />
+      <recent name="C:\Users\Lena\Documents\GitHub\JDBC_Tomcat_JUnit\src\main\webapp\WEB-INF\jsp" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 11.0.0">
     <configuration name="ActorDaoIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JDBC_Tomcat_JUnit" />
       <extension name="coverage">
@@ -118,22 +137,6 @@
       <option name="PACKAGE_NAME" value="dao" />
       <option name="MAIN_CLASS_NAME" value="dao.ActorDaoIT" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ActorDaoIT.updateActor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JDBC_Tomcat_JUnit" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dao" />
-      <option name="MAIN_CLASS_NAME" value="dao.ActorDaoIT" />
-      <option name="METHOD_NAME" value="updateActor" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -264,13 +267,55 @@
         </option>
       </method>
     </configuration>
+    <configuration name="index.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 11.0.0" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index.jsp" />
+      <deployment>
+        <artifact name="JDBC_Tomcat_JUnit:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/JDBC_Tomcat_JUnit_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="893bed01-b2f2-4a6a-b295-29b2c2ecd0d6" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51853" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="JDBC_Tomcat_JUnit:war" />
+        </option>
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Tomcat Server.index.jsp" />
         <item itemvalue="JUnit.dao in JDBC_Tomcat_JUnit" />
         <item itemvalue="JUnit.ActorDaoIT" />
         <item itemvalue="JUnit.MovieDaoIT" />
         <item itemvalue="JUnit.MovieDaoIT.saveMovie" />
-        <item itemvalue="JUnit.ActorDaoIT.updateActor" />
       </list>
     </recent_temporary>
   </component>
@@ -297,6 +342,10 @@
       <workItem from="1730966571576" duration="8122000" />
       <workItem from="1730976220435" duration="29573000" />
       <workItem from="1731055641532" duration="33247000" />
+      <workItem from="1731182051836" duration="4152000" />
+      <workItem from="1731232951772" duration="24436000" />
+      <workItem from="1731312526614" duration="9290000" />
+      <workItem from="1731322292150" duration="4402000" />
     </task>
     <servers />
   </component>
