@@ -3,10 +3,15 @@
 <html>
 <head>
   <title>JSP - Hello World</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1><%= "Hello World!" %></h1>
+<h1><%= "application" %></h1>
 <br/>
-<a href="hello-servlet">Hello Servlet</a>
+
+<a href="/categories" >CATEGORIES</a>
+<a href="/movies">MOVIES</a>
+<a href="/actors">ACTORS</a>
+
 </body>
 </html>
